@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Social Hub</title>
+  <title>your title here</title>
   <meta name="google-signin-client_id" content="202303647205-hkoael6jehqr88t3ch2aiho65brt9ncp.apps.googleusercontent.com" />
   <script src="https://accounts.google.com/gsi/client" async defer></script>
   <style>
@@ -288,8 +288,8 @@
 <body>
   <header>
     <img
-      src="https://cdn.discordapp.com/attachments/1186219018542133309/1372697766106501251/872cbe94-6f10-48c0-9bfd-67b78e225540.png?ex=6827b7ea&is=6826666a&hm=b0b20d7b9acc62516b9a966beeda84ec99a234ee8f0c751b5005f4e1fcc52801&"
-      alt="The Social Hub Logo"
+      src="https://exemple.com/file/png"
+      alt="your logo here"
       class="logo"
     />
     <h1>The Social Hub</h1>
@@ -315,10 +315,10 @@
   <div class="content-container">
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>Join our community on Discord for support, questions, or collaboration!</p>
+      <p>contact service here</p>
       <a
         class="discord-btn"
-        href="https://discord.gg/NPmDNNKtw6"
+        href="discord link here"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -423,8 +423,8 @@
 
     // Discord Login
     discordLoginBtn.addEventListener("click", () => {
-      const clientId = "1372714920981823528";
-      const redirectUri = encodeURIComponent("https://thesocialhub.vercel.app/TheSocialHub.html");
+      const clientId = "your_client_id";
+      const redirectUri = encodeURIComponent("https://exemple.com/redirect");
       const discordUrl = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=identify%20email%20guilds`;
       window.location.href = discordUrl;
     });
@@ -436,11 +436,11 @@
     if (code) {
       // Create the form data to send
       const formData = new FormData();
-      formData.append('client_id', '1372714920981823528');
-      formData.append('client_secret', 'CAq_mGF6mkA5CIGMtDQjsK8EysywxkpI');
+      formData.append('client_id', 'client id here');
+      formData.append('client_secret', 'client secret here');
       formData.append('grant_type', 'authorization_code');
       formData.append('code', code);
-      formData.append('redirect_uri', 'https://thesocialhub.vercel.app/TheSocialHub.html');
+      formData.append('redirect_uri', 'redirect url here');
       
       fetch('https://discord.com/api/oauth2/token', {
         method: 'POST',
@@ -489,7 +489,7 @@
     }
   </script>
   <footer>
-            <p>© 2025 The Social Hub. All rights reserved.</p>
+            <p>© 2025 your website name here. All rights reserved.</p>
   </footer>
 </body>
 </html>
