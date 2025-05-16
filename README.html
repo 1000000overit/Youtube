@@ -1,11 +1,9 @@
-# Youtube
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>your title here</title>
+  <title>test site</title>
   <meta name="google-signin-client_id" content="202303647205-hkoael6jehqr88t3ch2aiho65brt9ncp.apps.googleusercontent.com" />
   <script src="https://accounts.google.com/gsi/client" async defer></script>
   <style>
@@ -423,7 +421,7 @@
 
     // Discord Login
     discordLoginBtn.addEventListener("click", () => {
-      const clientId = "your_client_id";
+      const clientId = "1373019907020685322";
       const redirectUri = encodeURIComponent("https://exemple.com/redirect");
       const discordUrl = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=identify%20email%20guilds`;
       window.location.href = discordUrl;
@@ -436,8 +434,8 @@
     if (code) {
       // Create the form data to send
       const formData = new FormData();
-      formData.append('client_id', 'client id here');
-      formData.append('client_secret', 'client secret here');
+      formData.append('client_id', '1373019907020685322');
+      formData.append('client_secret', 'mIFc8dHSCooPQrUWx6HllTquSd-_O6mQ');
       formData.append('grant_type', 'authorization_code');
       formData.append('code', code);
       formData.append('redirect_uri', 'redirect url here');
@@ -489,7 +487,7 @@
     }
   </script>
   <footer>
-            <p>© 2025 your website name here. All rights reserved.</p>
+            <p>© 2025 Test site. All rights reserved.</p>
   </footer>
 </body>
 </html>
